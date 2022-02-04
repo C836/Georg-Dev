@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+}
+
+.card-wrapper {
+    margin: 5% 0;
+}
+
+.custom-circle-image {
+    width: 20vw;
+    height: 20vw;
+}
+
+.custom-circle-image img {
+    object-fit: cover;
+}
+
+.card-title {
+    letter-spacing: 1.1px;
+}
+
+.card-text {
+    font-family: MerriweatherRegular;
+    font-size: 22px;
+    line-height: initial;
+}
+
+.display1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 80vh;
+    font-size: large;
+}
+
+.btnConf {
+    background-color: #0651e8;
+    color: white;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.desc {
+    line-height: 1.6;
+}
+
+.background {
+    position: absolute;
+    z-index: -99;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+}
