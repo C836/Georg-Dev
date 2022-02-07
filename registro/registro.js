@@ -39,3 +39,39 @@ const pesquisarCep = async() => {
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
+
+//////////////////////// VALIDAÇÃO DE SENHAS
+let senha = document.querySelector('#senha');
+var validSenha = false
+
+let confirmarSenha = document.querySelector('#confirmarSenha');
+var validConfirmarSenha = false
+
+senha.addEventListener('keyup', () => {
+  if(senha.value.length <= 3){
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid red')
+    validSenha = false
+  }else{
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid green')
+    validSenha = true
+  }
+});
+
+confirmarSenha.addEventListener('keyup', () => {
+  if(senha.value != confirmarSenha.value){
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red')
+    validConfirmarSenha = false
+  }else{
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid green')
+    validConfirmarSenha = true
+  }
+});
+
+
+function cadastrar() {
+  if (validSenha != validConfirmarSenha) {
+    alert('Por favor, preencha os campos corretamente')
+  }else {
+    alert('foi')
+  }
+}
