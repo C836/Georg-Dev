@@ -33,45 +33,66 @@ const pesquisarCep = async() => {
       preencherForm(endereco);
     }
   }else{
-    document.getElementById('cep').value = 'CEP incorreto 🧐'
+    document.getElementById('cep').value = 'CEP incorreto 🧐';
   }
 }
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
 
+/////////////////////VALIDAÇÃO DE EMAIL
+let validEmail = document.querySelector('#email');
+var validaEmail = false;
+
+email.addEventListener('keyup', () => {
+  var email  = document.getElementById("email").value;
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if (email.match(pattern)) {
+    document.getElementById('email').setAttribute('style', 'border: 4px solid green');
+    validaEmail = true;
+  }else {
+    document.getElementById('email').setAttribute('style', 'border: 4px solid red');
+    validaEmail = false;
+  }
+});
+
 //////////////////////// VALIDAÇÃO DE SENHAS
 let senha = document.querySelector('#senha');
-var validSenha = false
+var validSenha = false;
 
 let confirmarSenha = document.querySelector('#confirmarSenha');
-var validConfirmarSenha = false
+var validConfirmarSenha = false;
 
 senha.addEventListener('keyup', () => {
   if(senha.value.length <= 3){
-    document.getElementById('senha').setAttribute('style', 'border: 4px solid red')
-    validSenha = false
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid red');
+    validSenha = false;
   }else{
-    document.getElementById('senha').setAttribute('style', 'border: 4px solid green')
-    validSenha = true
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid green');
+    validSenha = true;
   }
 });
 
 confirmarSenha.addEventListener('keyup', () => {
   if(senha.value != confirmarSenha.value){
-    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red')
-    validConfirmarSenha = false
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red');
+    validConfirmarSenha = false;
   }else{
-    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid green')
-    validConfirmarSenha = true
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid green');
+    validConfirmarSenha = true;
   }
 });
 
 
 function cadastrar() {
-  if (validSenha != validConfirmarSenha) {
-    alert('Por favor, preencha os campos corretamente')
+  if (validSenha && validConfirmarSenha && validaEmail) {
+    alert('foi');
   }else {
-    alert('foi')
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid red');
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red');
+    document.getElementById('email').setAttribute('style', 'border: 4px solid red');
+    alert('Por favor, preencha os campos corretamente');
   }
 }
+
