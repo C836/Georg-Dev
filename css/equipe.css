@@ -1,6 +1,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #f1fcf4 !important;
+    padding: 60px;
 }
 
 .btn-primary:hover,
@@ -17,9 +18,6 @@
     border-color: #1D60E8;
 }
 
-section {
-    padding: 60px 0;
-}
 
 section .section-title {
     
@@ -126,7 +124,7 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
-.row{
+.vRow{
     display: flex; 
     justify-content: center;
 }

@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Raleway:wght@500;700&display=swap');
+
+body{font-family: 'Raleway', sans-serif;
+}
+
+.card-titulo, h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.card-texto{
+    font-family: 'Raleway', sans-serif;
+}
+
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
 }
+
+body{background-color: white;}
 
 .card-wrapper {
     margin: 5% 0;
@@ -26,6 +43,7 @@ body, html {
 }
 
 .display1 {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +58,16 @@ body, html {
     color: white;
 }
 
-.navbar {
-    background-color: transparent;
+.btnConf:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.493);
+    background-color: #043BA9;
+    color: white;
+}
+
+.btnConf:active{
+    transition: none;
+    color: #0651e8;
+    background-color: white;
 }
 
 .desc {
@@ -57,52 +83,17 @@ body, html {
     object-fit: cover;
 }
 
-#logo {
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    display: flex;
-    float: left;
-    overflow: hidden;
-    z-index: 99;
-    top: 25px;
-    left: 40px;
+.cards{
+    margin-top: 150px;
 }
 
-.logoImg {
-    width: 45px;
-    height: 90px;
-    transition: all 1s;
-}
-
-#logoNome {
-    width: 200px;
-    height: 90px;
-    position: absolute;
-    z-index: -5;
-    transition: all 1s;
-    transform: translate(-75%, 20%);
-    transform-origin: 0 0;
-    overflow: hidden;
-}
-
-#george {
-    min-width: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#logoHover {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    z-index: 5;
-}
-
-#logoHover:hover~#logoR {
-    transform: translateX(205px);
-}
-
-#logoHover:hover~#logoNome {
-    transform: translate(25%, 20%);
+@media (min-width: 700px) {
+    .display1 {
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+    .desc{
+        width: 50%;
+    }
 }
