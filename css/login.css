@@ -7,7 +7,7 @@ html, body{
     height: 100vh;
     width: 100%;
     place-items: center;
-    background-color: rgb(93, 160, 110);
+    background-color: rgb(226, 227, 247);
 }
 
 .container{
@@ -78,7 +78,7 @@ input[type="submit"]{
     transition: all 0.3s ease;
 }
 input[type="submit"]:hover{
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     background: linear-gradient(to right, rgb(8, 1, 98) 0%,#0651E8 100%);
 }
 .social-medias p{
@@ -97,14 +97,48 @@ input[type="submit"]:hover{
     font-size: 15px;
     text-decoration: none;
     padding-left: 20px;
-    color: rgb(34, 34, 34);
+    color: #FFF;
     font-weight: 700;
+    line-height: 45px;
+    border-radius: 5px;
+    
+}
+.instagram-box i, 
+.google-box i{
+    padding-right: 12px;
+    font-size: 20px;
 }
 
 .instagram-box a{
-    background-color: rgb(64,93,230)
-    ;
+    margin: 20px 0 15px 0;
+    background-color: #417399;
+    background: linear-gradient(to right, #417399 0%,#4c669bce 100%);
+}
+.instagram-box a:hover{
+    background: linear-gradient(to left, #417399 0%,#4c669bce 100%);
 }
 .google-box a {
-    background-color: rgb(66,133,244);
+    margin: 20px 0 50px 0;
+    background-color: #C4402F;
+    background: linear-gradient(to right, #C4402F 0%,#e05a48 100%);
+}
+.google-box a:hover {
+    transition: 0.2s;
+    background: linear-gradient(to left, #C4402F 0%,#e05a48 100%);
+}
+.forgot_password{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.forgot_password a{
+    color:#222222;
+}
+.forgot_password a:hover{
+    text-decoration: none;
+    color:#417399;
+    transition: 0.2s;
+}
+footer .p{
+    font-weight: 700;
 }
