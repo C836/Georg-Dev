@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{font-family: 'Raleway', sans-serif;}
+
+html, body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background-color: rgb(226, 227, 247);
+}
+
+.container{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.20) ;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+
+.underline::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+.underline::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #0651E8 0%, rgb(8, 1, 98) 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.6s ease;
+}
+#submit-button{
+    margin: 40px 0 20px 0;
+}
+input:focus ~ .underline::after, 
+input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 400;
+    background: linear-gradient(to right, #0651E8 0%, rgb(8, 1, 98) 100%);
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to right, rgb(8, 1, 98) 0%,#0651E8 100%);
+}
+.social-medias p{
+    font-size: 14px;
+    text-align: center;
+}
+.social-medias a {
+    text-decoration: none;
+    color: #0651E8;
+}
+.instagram-box a, 
+.google-box a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 45px;
+    border-radius: 5px;
+    
+}
+.instagram-box i, 
+.google-box i{
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.instagram-box a{
+    margin: 20px 0 15px 0;
+    background-color: #417399;
+    background: linear-gradient(to right, #417399 0%,#4c669bce 100%);
+}
+.instagram-box a:hover{
+    background: linear-gradient(to left, #417399 0%,#4c669bce 100%);
+}
+.google-box a {
+    margin: 20px 0 50px 0;
+    background-color: #C4402F;
+    background: linear-gradient(to right, #C4402F 0%,#e05a48 100%);
+}
+.google-box a:hover {
+    transition: 0.2s;
+    background: linear-gradient(to left, #C4402F 0%,#e05a48 100%);
+}
+.forgot_password{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.forgot_password a{
+    color:#222222;
+}
+.forgot_password a:hover{
+    text-decoration: none;
+    color:#417399;
+    transition: 0.2s;
+}
+footer .p{
+    font-weight: 700;
+}
