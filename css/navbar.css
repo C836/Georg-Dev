@@ -1,6 +1,8 @@
 .aNav{color: white;}
 
 .navbar {
+    position:absolute; 
+    right:0;
     background-color: transparent;
 }
 

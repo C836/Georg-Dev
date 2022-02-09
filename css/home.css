@@ -43,13 +43,12 @@ body{background-color: white;}
 }
 
 .display1 {
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    height: 80vh;
+    height: 100vh;
     font-size: large;
 }
 
@@ -83,17 +82,16 @@ body{background-color: white;}
     object-fit: cover;
 }
 
-.cards{
-    margin-top: 150px;
-}
-
 @media (min-width: 700px) {
     .display1 {
-        justify-content: left;
-        align-items: left;
         text-align: left;
+        justify-content: left;
     }
     .desc{
         width: 50%;
     }
+    .displayDiv{
+        padding-left: 75px !important;
+    }
 }
+

@@ -7,7 +7,7 @@ li{margin: 8px 0;}
 
 footer{
     width: 100%;
-    background-color: #bebebe70;
+    background-color: #d6d6d6;
     padding-top:50px ;
     display:flex;
     justify-content:center; 
@@ -32,7 +32,7 @@ footer{
 #fooLista{
     display:flex; 
     justify-content: space-around; 
-    width: 75%;
+    width: 90%;
 }
 
 #fooContato{
@@ -59,6 +59,10 @@ footer{
     background-color:rgb(43, 43, 43); 
     width: 100%; 
     color: white;
+}
+
+.fooUl{
+    margin: 0 20px;
 }
 
 @media (min-width: 800px) {

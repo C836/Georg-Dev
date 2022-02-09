@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georg Dev</title>
+    <link rel="icon" href="image/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -12,17 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://kit.fontawesome.com/1ace605db6.js" crossorigin="anonymous"></script>
     <script src="js/home.js" defer></script>
+    <script src="js/home_slides.js" defer></script>
+    <script src="js/home_slides_textos.js" defer></script>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/equipe.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home_slides.css">
 </head>
 
 <!--- HOME PRINCIPAL GABRIEL --->
 
 <body>
-  <img class="background"src="image/back.png">
-  <section>
+    <img id="backSlide" src="image/backSlide.png">
+    <div id="displayDots"></div>
+    <img class="background"src="image/back.png">
+    <section>
     <div class="ml-4"id="logo">
       <div id="logoHover"></div>
 
@@ -36,11 +42,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
               </ul>
-              <div class="nav-item">
-                  <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Blog</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Nosso time</a>
+            <div class="nav-item">
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#sobre">Sobre</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Nossa equipe</a>
             </div>
               <div class="nav-item">
                   <button type="button" class="btn btnConf nav-link mr-sm-4 my-2 px-4 aNav"  href="#" onclick="location.href='login/login.html'">Log-in</button>
@@ -50,21 +59,21 @@
     </div>
   </section>
   <section>
-    <div class="w-100 p-3 display1">
-        <div class="p-5 mt-5">
-            <h1 class="ml-3 mb-4">Morbi diam libero</h1>
-            <p class="m-3 mb-5 desc">Rrhoncus et elementum scelerisque, porta gravida orci. Suspendisse convallis neque libero, nec egestas purus consequat et. Nunc in nunc eu nisl semper fringilla a id leo.</p>
-            <button type="button" class="btn m-3 px-5 py-3 btn-lg btnConf">Confira nossos planos!</button>
+    <div class="w-100  display1">
+        <div class="px-3 mt-5 displayDiv">
+            <h1 class="mb-4">Morbi diam libero</h1>
+            <p class="my-3 mb-5 desc">Rrhoncus et elementum scelerisque, porta gravida orci. Suspendisse convallis neque libero, nec egestas purus consequat et. Nunc in nunc eu nisl semper fringilla a id leo.</p>
+            <button type="button" class="btn px-5 py-3 btn-lg btnConf">Confira nossos planos!</button>
         </div>
     </div>
   </section>
-  <section>
+  <section class="bg-light pt-5">
     <div class="about-cards-section cards">
         <div class="container">
           <div class="row">
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:200px; height:200px;">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px;">
                   <img class="w-100 h-100" src="https://source.unsplash.com/910x592" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
@@ -76,7 +85,7 @@
       
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:200px; height:200px">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px">
                   <img class="w-100 h-100" src="https://source.unsplash.com/1230x802" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
@@ -88,7 +97,7 @@
       
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image " style="width:200px; height:200px">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image " style="width:175px; height:175px">
                   <img class="w-100 h-100" src="https://source.unsplash.com/1230x794" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
@@ -102,12 +111,37 @@
       </div>
     </section>
 
-<!--- HOME PRINCIPAL GABRIEL --->
+<section id="sobre">
+    <div id="displaySlide" onclick="slide()">
+        <div id="areaSlides">
+            <div class="slides">
+                <div class="slides thd" style="background-image: url(https://source.unsplash.com/910x592); background-size: cover;">
+                </div>
+
+                <div class="slides sec" style="background-image: url(https://source.unsplash.com/1230x802); background-size: cover;">
+                </div>
+
+                <div class="slides main" style="background-image: url(https://source.unsplash.com/1230x794); background-size: cover;">
+                </div>
+            </div>
+        </div>
+
+        <div id="areaTexto">
+            <div id="slideTexto">
+                <h1 id="slideH1">Lorem ipsum dolor</h1>
+                <h6 id="slideH6" style="line-height:2">Consectetur adipiscing elit. Nunc a orci diam. Curabitur eros neque, tempus sed lectus sed, accumsan sagittis elit. Nullam ultrices risus eget felis hendrerit sodales. Vivamus at feugiat magna, a hendrerit magna. Nulla convallis, nulla vitae vestibulum cursus, urna est scelerisque enim, id pellentesque ante velit in ipsum.</br></br>
+                
+                Mauris non laoreet leo, sit amet tincidunt diam. Morbi id arcu ac tortor rutrum condimentum sed sit amet metus. Aenean tincidunt velit arcu, malesuada elementum velit dapibus vitae. Phasellus iaculis ut quam sed imperdiet. Sed ante justo, auctor vitae laoreet ac, interdum quis nunc.
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!--- ultimos posts Jocelia --->
 
-<section class="pt-5 pb-5" id="blog">
+<section class="pt-5 pb-5 bg-light" id="blog">
   <div class="container">
       <div class="row">
           <div class="col-6">
@@ -463,7 +497,7 @@
             <li>Nosso time</li>
         </ul>
 
-        <ul>
+        <ul class="fooUl">
             <li><h4>Equipe</h4></li>
             <li>Gabriel Lopes</li>
             <li>Jocélia Oliveira</li>
