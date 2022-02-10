@@ -128,3 +128,17 @@ section .section-title {
     display: flex; 
     justify-content: center;
 }
+
+/* PERSONALIZANDO O SCROLL */
+::-webkit-scrollbar {
+	width:10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background:#333;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1D60E8;
+}
