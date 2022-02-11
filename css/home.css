@@ -3,6 +3,11 @@
 body{font-family: 'Raleway', sans-serif;
 }
 
+.nav-item a{display:none}
+
+.displayDiv h1{font-size: 30px;}
+.displayDiv p{font-size: 16px;}
+
 .card-titulo, h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -52,23 +57,6 @@ body{background-color: white;}
     font-size: large;
 }
 
-.btnConf {
-    background-color: #0651e8;
-    color: white;
-}
-
-.btnConf:hover {
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.493);
-    background-color: #043BA9;
-    color: white;
-}
-
-.btnConf:active{
-    transition: none;
-    color: #0651e8;
-    background-color: white;
-}
-
 .desc {
     line-height: 1.6;
 }
@@ -82,7 +70,21 @@ body{background-color: white;}
     object-fit: cover;
 }
 
+#displayDots{
+    display:none
+}
+
+@media (min-width: 800px) {
+    .nav-item a{display:block}
+}
+
 @media (min-width: 700px) {
+
+    .displayDiv h1{font-size: 32pt;}
+    .displayDiv p{font-size: 18px;}
+
+    .btnConf{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}
+
     .display1 {
         text-align: left;
         justify-content: left;
@@ -92,6 +94,9 @@ body{background-color: white;}
     }
     .displayDiv{
         padding-left: 75px !important;
+    }
+    #displayDots{
+        display:none
     }
 }
 

@@ -1,7 +1,9 @@
-.aNav{color: white;}
+.aNav{color: rgb(255, 255, 255);}
+.aNav:hover{color: rgb(210, 210, 210);}
 
 .navbar {
     position:absolute; 
+    z-index: 99;
     right:0;
     background-color: transparent;
 }
@@ -58,4 +60,21 @@
 
 #logoHover:hover~#logoNome {
     transform: translate(25%, 20%);
+}
+
+.btnConf {
+    background-color: #0651e8;
+    color: white;
+}
+
+.btnConf:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.493);
+    background-color: #043BA9;
+    color: white;
+}
+
+.btnConf:active{
+    transition: none;
+    color: #0651e8;
+    background-color: white;
 }
