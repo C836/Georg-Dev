@@ -1,94 +1,77 @@
-#fullScreen{
-    position: absolute;
-    top: 0;
-    z-index: -5;
+#subScreen{
+  margin-top: 130px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
 }
 
-#subScreen{
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    width:100vw;
-    height: 100vh}
-  
+#carouselExampleIndicators{
+  width:395px;
+  background-color: blueviolet;
+}
+
+#setas{
+  display:flex
+}
+
+.esquerda{
+  position:absolute;
+  z-index:10;
+  top:170px;
+}
+
+.direita{
+  position:absolute;
+  z-index:10;
+  right:0;
+  top:170px;
+}
+
+.card{
+  width: 300px;
+  height: 400px
+}
+
+#cadastro{
+  display:flex;
+  justify-content:center;
+  text-align: center;
+  width:100%;
+}
+
+#insCaixa{
+  width: 85%;
+  line-height: 2.5;
+  padding: 50px 0;
+  background-color: blueviolet;
+}
+
+@media (min-width: 800px) {
+  #subScreen{
+  margin-top: 0px;
+  align-items: center;
+  }
+
   #subOpt{
-    margin:0 50px;
-    margin-top:25vh;
-  }
-
-  #carouselExampleIndicators{
-    width:395px;
-    background-color: blueviolet;
-  }
-
-  #setas{
-    display:flex;
-
-  }
-  
-  .esquerda{
-    position:absolute;
-    z-index:10;
-    top:170px;
-  }
-
-  .direita{
-    position:absolute;
-    z-index:10;
-    right:0;
-    top:170px;
-  }
-
-  .card{
-    width: 300px;
-    height: 450px
-  }
-
-  #insCaixa{
-    position:absolute;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  right: 0;
+  display:flex;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
   }
 
   #cadastro{
-    display:flex;
-    justify-content:center;
-    text-align: center;
-    width:90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: left;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
   }
-
-  @media (min-width: 800px) {
-    #subScreen{
-    display:flex;
-    justify-content: right;
-    align-items: center;
-    width:100vw;
-    height: 100vh;
-    background-color: blue;}
-
-    #subOpt{
-    margin:0 50px;
-    margin-top:0;
-    }
-
-    .card{
-    width: 300px;
-    height: 400px
-    }
-      
-    #cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    text-align: left;
-    background-color: aqua;
-    width: 50vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    }
-    
-    #insCaixa{
-    width: 85%;
-    line-height: 2.5;
-    }
-  }
+}

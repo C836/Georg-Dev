@@ -493,8 +493,3 @@ document.addEventListener('DOMContentLoaded', function () {
           clearTimeout(id);
         };
   }());
-
-setTimeout( function() {
-  document.querySelector("#backSlide").style.display="block";
-  document.querySelector("#displayDots").style.display="inline";
-}, 500);
