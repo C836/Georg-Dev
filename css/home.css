@@ -5,8 +5,14 @@ body{font-family: 'Raleway', sans-serif;
 
 .nav-item a{display:none}
 
-.displayDiv h1{font-size: 30px;}
-.displayDiv p{font-size: 16px;}
+.displayDiv h1{
+    font-size: 30px;
+}
+
+.displayDiv p{
+    font-size: 16px;
+    padding-bottom: 12px;
+}
 
 .card-titulo, h1{
     font-family: 'Raleway', sans-serif;
@@ -80,10 +86,14 @@ body{background-color: white;}
 
 @media (min-width: 700px) {
 
-    .displayDiv h1{font-size: 32pt;}
-    .displayDiv p{font-size: 18px;}
+    .displayDiv h1{
+        font-size: 32pt;}
 
-    .btnConf{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}
+    .displayDiv p{
+        font-size: 18px;
+        padding-bottom: 40px; }
+
+    .btnConf{padding:.5rem 1rem;font-size:1.10rem;line-height:1.5;border-radius:.3rem}
 
     .display1 {
         text-align: left;

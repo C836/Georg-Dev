@@ -21,7 +21,7 @@
     overflow: hidden;
     z-index: 99;
     top: 25px;
-    left: 40px;
+    transform: scale(0.8)
 }
 
 .logoImg {
@@ -77,4 +77,10 @@
     transition: none;
     color: #0651e8;
     background-color: white;
+}
+
+@media (min-width: 700px) {
+    #logo{
+        left: 40px;
+        transform: scale(1)}
 }
