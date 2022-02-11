@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    
     <title>Login Georg Dev</title>
 </head>
 <body>
@@ -22,15 +23,16 @@
 
 <!--Campo email-->
         <div class="input-box">
-            <input type="email" id ="email" placeholder="Entre com Seu Email" required>
+            <input type="email" id ="email" placeholder="Entre com Seu Email" required autocomplete="off">
             <div class="underline" id="underline-email-error"></div>
-            <span id="error-email"></span>
+            <span id="error-email" class= "error-email">digite um email válido</span>
         </div>
 
 <!--Campo Senha-->
         <div class="input-box">
-            <input type="password" placeholder="Entre com sua senha" required>
-            <div class="underline"></div>
+            <input type="password" placeholder="Entre com sua senha" required id="password">
+            <div class="underline" id="underline-password-empty"></div>
+            <span id="error-senha" class= "error-senha">senha inválida</span>
         </div>
 
 <!--Botão Submit-->

@@ -160,3 +160,16 @@ button[type="button"]:hover{
 footer .p{
     font-weight: 700;
 }
+
+.error-email, .error-senha{
+    display: none;
+}
+
+
+/* Serve somente para mudar a cor caso a email e senha não forem digitados.*/
+.underlinePadrao::before{
+    background: red !important;
+}
+.underlinePadrao::after{
+    background: red !important;
+}
