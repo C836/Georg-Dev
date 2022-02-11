@@ -21,7 +21,7 @@ const pesquisarCep = async() => {
   limparForm();
 
   const cep = document.getElementById('cep').value.replace("-", "");
-  const url = `http://viacep.com.br/ws/${cep}/json/`;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
 
   if(validCep(cep)){
     const dados = await fetch(url);
