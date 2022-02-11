@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
@@ -12,38 +11,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    
     <title>Login Georg Dev</title>
 </head>
 <body>
     <div class="container">
         <form action="#">
             <div class='box-titulo'>
-                <h1 class="titulo">Login Georg Dev</h1>
+                <h1 class="titulo">Login Georg Dev </h1>
             </div>
+
+<!--Campo email-->
         <div class="input-box">
-            <input type="text" placeholder="Enter Your Email" required>
-            <div class="underline"></div>
+            <input type="email" id ="email" placeholder="Entre com Seu Email" required autocomplete="off">
+            <div class="underline" id="underline-email-error"></div>
+            <span id="error-email" class= "error-email">digite um email válido</span>
         </div>
+
+<!--Campo Senha-->
         <div class="input-box">
-            <input type="password" placeholder="Enter Your Password" required>
-            <div class="underline"></div>
+            <input type="password" placeholder="Entre com sua senha" required id="password">
+            <div class="underline" id="underline-password-empty"></div>
+            <span id="error-senha" class= "error-senha">senha inválida</span>
         </div>
+
+<!--Botão Submit-->
         <div class="input-box button" id="submit-button">
-            <input id= "main-button" type="submit" name="" value="Continue">
+            <button id="main-button" type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
         </div>
         </form>
-        <div class="social-medias"><p>Inscreva-se <a href="../registro/registro.html">AQUI</a> <br>ou conecte com sua conta: </p>
+
+ <!--Registrar-->       
+        <div class="social-medias"><p>Precisando de uma conta? <a href="../registro/registro.html">Registre-se</a> <br>ou conecte com: </p>
             <div class="instagram-box">
                 <a href="#"><i class="fab fa-instagram"></i></i> Login com Instagram</a>
             </div>
             <div class="google-box">
                 <a href="#"><i class="fab fa-google-plus-g"></i></i> Login com Google+</a>
             </div>
-            <p class="forgot_password"><a href="">Esqueci minha senha</a></p>
+            <p class="forgot_password"><a href="trocarSenha.html">Esqueceu sua senha? </a></p>
         </div>
     </div>
     <footer>
         <p> &copy; 2022 Copyright - Front-Enders</p>
     </footer>
+    <script src="../js/login.js"></script>
   </body>
 </html>
