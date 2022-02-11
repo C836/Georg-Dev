@@ -5,140 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georg Dev</title>
+    <link rel="icon" href="image/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/1ace605db6.js" crossorigin="anonymous"></script>
     <script src="js/home.js" defer></script>
+    <script src="js/home_slides.js" defer></script>
+    <script src="js/home_slides_textos.js" defer></script>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/equipe.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home_slides.css">
 </head>
 
 <!--- HOME PRINCIPAL GABRIEL --->
 
 <body>
-  <img class="background"src="image/back.jpg">
-  <div id="logo">
-    <div id="logoHover"></div>
+    <img id="backSlide" src="image/backSlide.png">
+    <div id="displayDots"></div>
+    <img class="background"src="image/back.png">
+    <section>
+    <div class="ml-4"id="logo">
+      <div id="logoHover"></div>
 
-      <div class="logoImg"><img src="image/logoL.png"></div> 
-      <div id="logoNome"><img id="george" src=image/georg.png></div>
-      <div class="logoImg" id="logoR"><img src="image/logoR.png"></div>
+        <div class="logoImg"><img src="image/logoL.png"></div> 
+        <div id="logoNome"><img id="george" src=image/georg.png></div>
+        <div class="logoImg" id="logoR"><img src="image/logoR.png"></div>
 
-  </div>
-  <section class="navBar">
-    <nav class="navbar navbar-expand-lg mt-2">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            </ul>
+    </div>
+    <div class="navBar">
+        <nav class="navbar navbar-expand-lg mt-2">
             <div class="nav-item">
-                <a class="nav-link mr-sm-5 my-2 aNav" href="#">inscreva-se</a>
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#sobre">Sobre</a>
             </div>
             <div class="nav-item">
-                <a class="nav-link mr-sm-4 my-2 px-4 btnNav" href="#" onclick="location.href='login.html'">log-in</a>
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Blog</a>
             </div>
-        </div>
-    </nav>
+            <div class="nav-item">
+                <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Nossa equipe</a>
+            </div>
+            <div class="nav-item">
+                <button type="button" class="btn btnConf nav-link mr-sm-4 my-2 px-4 aNav"  href="#" onclick="location.href='login/login.html'">Log-in</button>
+            </div>
+        </nav>
+    </div>
   </section>
   <section>
-    <div class="w-100 p-3 display1">
-        <div class="p-5 mt-5 align-middle">
-            <h1>Morbi diam libero</h1>
-            <p class="m-3 desc">Rrhoncus et elementum scelerisque, porta gravida orci. Suspendisse convallis neque libero, nec egestas purus consequat et. Nunc in nunc eu nisl semper fringilla a id leo.</p>
-            <button type="button" class="btn m-3 px-5 py-3 btn-lg btnConf">Confira nossos planos!</button>
+    <div class="w-100 display1">
+        <div class="px-3 mt-5 displayDiv">
+            <h1 class="mb-4">Morbi diam libero</h1>
+            <p class="my-3 mb-5 desc">Rrhoncus et elementum scelerisque, porta gravida orci. Suspendisse convallis neque libero, nec egestas purus consequat et. Nunc in nunc eu nisl semper fringilla a id leo.</p>
+            <button type="button" class="btn px-5 py-3 btnConf">Confira nossos planos!</button>
         </div>
     </div>
   </section>
-    <section class="about-cards-section my-5">
+  <section class="bg-light pt-5">
+    <div class="about-cards-section cards">
         <div class="container">
           <div class="row">
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px;">
                   <img class="w-100 h-100" src="https://source.unsplash.com/910x592" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
-                  <h3 class="text-uppercase card-title">Our Facilities</h3>
-                  <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
+                  <h3 class="text-uppercase card-titulo">Noticias</h3>
+                  <p class="card-texto">Mantenha-se atualizado de tudo relacionado ao mundo Tech com nossos lançamentos semanais!</p>
                 </div>
               </div>
             </div>
       
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px">
                   <img class="w-100 h-100" src="https://source.unsplash.com/1230x802" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
-                  <h3 class="text-uppercase card-title">Our Research</h3>
-                  <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
+                  <h3 class="text-uppercase card-titulo">Oportunidades</h3>
+                  <p class="card-texto">Diversas dicas e cursos para turbinar seu portfólio, tudo para te ajudar a conquistar sua tão desejada vaga</p>
                 </div>
               </div>
             </div>
       
             <div class="col-sm-4 card-wrapper">
               <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image " style="width:175px; height:175px">
                   <img class="w-100 h-100" src="https://source.unsplash.com/1230x794" alt="Card image cap">
                 </div>
                 <div class="card-body text-center mt-4">
-                  <h3 class="text-uppercase card-title">Our Expertise</h3>
-                  <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
+                  <h3 class="text-uppercase card-titulo">E muito mais!</h3>
+                  <p class="card-texto">Confira nossa assinatura premium para ter acesso a conteúdos selecionados como cursos, podcasts exclusivos e acesso ao grupo de membros</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+      </div>
+    </section>
 
-        <div class="carousel-inner crDisplay1">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>My Caption Title (1st Image)</h5>
-                    <p>The whole caption will only show up if the screen is at least medium size.</p>
+<section id="sobre">
+    <div id="displaySlide" onclick="slide()">
+        <div id="areaSlides">
+            <div class="slides">
+                <div class="slides thd" style="background-image: url(https://source.unsplash.com/910x592); background-size: cover;">
+                </div>
+
+                <div class="slides sec" style="background-image: url(https://source.unsplash.com/1230x802); background-size: cover;">
+                </div>
+
+                <div class="slides main" style="background-image: url(https://source.unsplash.com/1230x794); background-size: cover;">
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
+        </div>
+
+        <div id="areaTexto">
+            <div id="slideTexto">
+                <h1 id="slideH1">Lorem ipsum dolor</h1>
+                <h6 id="slideH6" style="line-height:2">Consectetur adipiscing elit. Nunc a orci diam. Curabitur eros neque, tempus sed lectus sed, accumsan sagittis elit. Nullam ultrices risus eget felis hendrerit sodales. Vivamus at feugiat magna, a hendrerit magna. Nulla convallis, nulla vitae vestibulum cursus, urna est scelerisque enim, id pellentesque ante velit in ipsum.</br></br>
+                
+                Mauris non laoreet leo, sit amet tincidunt diam. Morbi id arcu ac tortor rutrum condimentum sed sit amet metus. Aenean tincidunt velit arcu, malesuada elementum velit dapibus vitae. Phasellus iaculis ut quam sed imperdiet. Sed ante justo, auctor vitae laoreet ac, interdum quis nunc.
+                </h6>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-
-<!--- HOME PRINCIPAL GABRIEL --->
+</section>
 
 
 <!--- ultimos posts Jocelia --->
 
-<section class="pt-5 pb-5">
+<section class="pt-5 pb-5 bg-light" id="blog">
   <div class="container">
       <div class="row">
           <div class="col-6">
-              <h3 class="mb-3">Ultimos posts </h3>
+              <h3 class="section-title h1">Ultimos posts </h3>
           </div>
           
           <div class="col-6 text-right">
-              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <a class="btn btnConf mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                   <i class="fa fa-chevron-left"></i>
               </a>
-              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <a class="btn btnConf mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
                   <i class="fa fa-chevron-right"></i>
               </a>
           </div>
@@ -153,9 +163,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/react1.jpeg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Fundamentos do React</h4>
-                                          <p class="card-text">Neste capítulo abordaremos alguns conceitos fundamentais do React... </p>
-                                          <button type="button" class="btn btn-outline-secondary" onclick=" leia()">leia mais</button>
+                                          <h4 class="card-titulo">Fundamentos do React</h4>
+                                          <p class="card-texto">Neste capítulo abordaremos alguns conceitos fundamentais do React... </p>
+                                          <button type="button" class="btn btnConf" onclick=" leia()">leia mais</button>
                                       </div>
 
                                   </div>
@@ -164,20 +174,20 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/dev_ext.jpg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Devs Exterior</h4>
-                                          <p class="card-text">Faaala pessoal, no post de hoje abordaremos como é trabalhar no exterior na area tech...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">Devs Exterior</h4>
+                                          <p class="card-texto">Fala pessoal, hoje vamos abordar como é trabalhar no exterior na area tech...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
+                              <div class="col-md-4 mb-3" >
+                                  <div class="card" >
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/fW.jpg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Frameworks do Momento</h4>
-                                          <p class="card-text">Você saberia responder quais frameworks estão em alta em 2022?...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">Frameworks do Momento</h4>
+                                          <p class="card-texto">Você saberia responder quais frameworks estão em alta em 2022?...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
                                   </div>
@@ -192,9 +202,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/IA.jpeg">
                                       <div class="card-body">
-                                          <h4 class="card-title">A Tecnologia da Alexa</h4>
-                                          <p class="card-text">Conheça a tecnologia da assistente de voz da Amazon...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">A Tecnologia da Alexa</h4>
+                                          <p class="card-texto">Conheça a tecnologia da assistente de voz da Amazon...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
 
@@ -204,9 +214,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/equipe.jpg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Trabalho em Equipe</h4>
-                                          <p class="card-text">Afinal, porquê o trabalho em equipe é tão importante?...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">Trabalho em Equipe</h4>
+                                          <p class="card-texto">Afinal, porquê o trabalho em equipe é tão importante?...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
                                   </div>
@@ -215,9 +225,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/github.jpg">
                                       <div class="card-body">
-                                          <h4 class="card-title">GIT e GITHUB</h4>
-                                          <p class="card-text">Dicas valiosas para versionamento de codigo...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">GIT e GITHUB</h4>
+                                          <p class="card-texto">Dicas valiosas para versionamento de codigo...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
                                   </div>
@@ -232,9 +242,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/bug.jpg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Não Funciona!</h4>
-                                          <p class="card-text">Vejas quais principais boas práticas que minimizam erros...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">Não Funciona!</h4>
+                                          <p class="card-texto">Vejas quais principais boas práticas que minimizam erros...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
 
@@ -244,9 +254,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/descanso.jpeg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Dando aquela pausa</h4>
-                                          <p class="card-text">Não pira! O descanso é muito importante no seu desempenho...</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
+                                          <h4 class="card-titulo">Dando aquela pausa</h4>
+                                          <p class="card-texto">Não pira! O descanso é muito importante no seu desempenho...</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
 
                                       </div>
                                   </div>
@@ -255,10 +265,9 @@
                                   <div class="card">
                                       <img class="img-fluid" alt="100%x280" src="./image/img_UPost/in.jpeg">
                                       <div class="card-body">
-                                          <h4 class="card-title">Linkedin, como ser visto?</h4>
-                                          <p class="card-text">Entenda a impotancia de deixar essa rede sempre atualizada..</p>
-                                          <button type="button" class="btn btn-outline-secondary">leia mais</button>
-
+                                          <h4 class="card-titulo">Linkedin, como ser visto?</h4>
+                                          <p class="card-textoo">Entenda a impotancia de deixar essa rede sempre atualizada..</p>
+                                          <button type="button" class="btn btnConf">leia mais</button>
                                       </div>
                                   </div>
                               </div>
@@ -273,5 +282,254 @@
 
 <!--- ultimos posts Jocelia --->
 
+<!---time victor-->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">Nossa Equipe</h5>
+        <div class="row vRow" >
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="./image/img_equipe/gabriel.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Gabriel Lopes</h4>
+                                    <p class="card-texto">A afirmação de trás é mentira. 🤔</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Gabriel Lopes</h4>
+                                    <p class="card-texto">A afirmação da frente é mentira. 🙈</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/C836">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/gabriel-lopes8/">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="./image/img_equipe/jocelia.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Jocélia Da Hora</h4>
+                                    <p class="card-texto">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Jocélia Da Hora</h4>
+                                    <p class="card-texto">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="github.com/JoceliaHora">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/joceliaoliveira/">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="./image/img_equipe/paulo.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Paulo Reis</h4>
+                                    <p class="card-textoo">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Paulo Reis</h4>
+                                    <p class="card-texto">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/paulooliveirv">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/paulo-reis-b424a1217/">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="./image/img_equipe/talita.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Talita Beneves</h4>
+                                    <p class="card-texto">Back-End? Front-End? ou Full-Stack?</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Talita Beneves</h4>
+                                    <p class="card-texto">
+                                        Não acho que quem ganhar ou quem perder, nem quem ganhar nem perder, vai ganhar ou perder. Vai todo mundo perder.
+                                        Então venha para nossa empresa porque você não perde e nem ganha
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/TalitaBeneves">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/talitabeneves/">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="./image/img_equipe/victor.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Victor Barros</h4>
+                                    <p class="card-texto">Front-end, home page e equipe</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Victor Barros</h4>
+                                    <p class="card-texto">Pelo amor de Deus, me dêem uma chance na sua empresa. Eu preciso de um emprego, tenho dívidas!</p>
+                                    <ul class="list-inline">
+                                        
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/victorb26">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/victorjcbarros/">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                      
+        </div>
+    </div>
+</section>
 </body>
+
+<footer>
+    <div id="fooLista">
+
+        <ul>
+            <li><h4>Inicio</h4></li>
+            <li>Cadastro</li>
+            <li>Blog</li>
+            <li>Nosso time</li>
+        </ul>
+
+        <ul class="fooUl">
+            <li><h4>Equipe</h4></li>
+            <li>Gabriel Lopes</li>
+            <li>Jocélia Oliveira</li>
+            <li>Paulo Oliveira</li>
+            <li>Talita Beneves</li>
+            <li>Victor Barros</li>
+        </ul>
+
+        <ul>
+            <li><h4>Suporte</h4></li>
+            <li><i class="fas fa-comment-alt"></i> Chat online</i></li>
+            <li><i class="fas fa-envelope"></i> E-mail</i></li>
+            <li><i class="fas fa-phone-alt"></i> Telefones</i></li>
+            <li><i class="fas fa-home"></i> Endereços</i></li>
+        </ul>
+
+    </div>
+
+    <div id="fooContato">
+        <div id="fooIcons">
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fab fa-facebook fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+
+        <button type="button" class="btn btnConf" id="fooBtn">Contato</button>
+    </div>
+
+    <div id="fooLogoB">
+        <img src="image/logoSat.png" id="fooLogo">
+    </div>
+</footer>
+<div id="fooCopy">
+    <p>&copy; 2022 Copyright - Front-Enders</p>
+</div>
 </html>

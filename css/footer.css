@@ -1,0 +1,101 @@
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+li{margin: 8px 0;}
+
+footer{
+    width: 100%;
+    background-color: #d6d6d6;
+    padding-top:50px ;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#fooLogoB{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+#fooLogo{
+    height: 60%;
+    padding: 20px 0;
+}
+
+#fooLista{
+    display:flex; 
+    justify-content: space-around; 
+    width: 90%;
+}
+
+#fooContato{
+    margin: 20px;
+    width: 75%; 
+    height: 100%; 
+    text-align: center;
+}
+
+#fooIcons{
+    display:flex; 
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#fooBtn{
+    border-radius: 60px;
+    padding: 10px 0;
+    width: 90%;
+}
+
+#fooCopy{
+    text-align: center;
+    background-color:rgb(43, 43, 43); 
+    width: 100%; 
+    color: white;
+}
+
+.fooUl{
+    margin: 0 20px;
+}
+
+@media (min-width: 800px) {
+    footer{
+        width: 100%;
+        height: 300px;
+        padding-top:10px;
+        display:flex;
+        justify-content:center; 
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    #fooLogoB{
+        width: 30%;
+        padding: 30px;
+    }
+
+    #fooLista{
+        display:flex; 
+        justify-content: space-around; 
+        width: 45%;
+
+    }
+
+    #fooIcons{
+        margin-bottom: 35px;
+    }
+
+    #fooContato{
+        padding-top: 45px;
+        width: 20%;
+        order: -1;
+    }
+    
+}

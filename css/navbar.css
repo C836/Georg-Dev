@@ -1,0 +1,80 @@
+.aNav{color: rgb(255, 255, 255);}
+.aNav:hover{color: rgb(210, 210, 210);}
+
+.navbar {
+    position:absolute; 
+    z-index: 99;
+    right:0;
+    background-color: transparent;
+}
+
+.desc {
+    line-height: 1.6;
+}
+
+#logo {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    z-index: 99;
+    top: 25px;
+    left: 40px;
+}
+
+.logoImg {
+    width: 45px;
+    height: 90px;
+    transition: all 1s;
+}
+
+#logoNome {
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    z-index: -5;
+    transition: all 1s;
+    transform: translate(-75%, 20%);
+    transform-origin: 0 0;
+    overflow: hidden;
+}
+
+#george {
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#logoHover {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 5;
+}
+
+#logoHover:hover~#logoR {
+    transform: translateX(205px);
+}
+
+#logoHover:hover~#logoNome {
+    transform: translate(25%, 20%);
+}
+
+.btnConf {
+    background-color: #0651e8;
+    color: white;
+}
+
+.btnConf:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.493);
+    background-color: #043BA9;
+    color: white;
+}
+
+.btnConf:active{
+    transition: none;
+    color: #0651e8;
+    background-color: white;
+}

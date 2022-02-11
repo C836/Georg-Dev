@@ -21,7 +21,7 @@ const pesquisarCep = async() => {
   limparForm();
 
   const cep = document.getElementById('cep').value.replace("-", "");
-  const url = `http://viacep.com.br/ws/${cep}/json/`;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
 
   if(validCep(cep)){
     const dados = await fetch(url);
@@ -52,7 +52,7 @@ email.addEventListener('keyup', () => {
     document.getElementById('email').setAttribute('style', 'border: 4px solid green');
     validaEmail = true;
   }else {
-    document.getElementById('email').setAttribute('style', 'border: 4px solid red');
+    document.getElementById('email').setAttribute('style', 'border: 4px solid #990014');
     validaEmail = false;
   }
 });
@@ -66,7 +66,7 @@ var validConfirmarSenha = false;
 
 senha.addEventListener('keyup', () => {
   if(senha.value.length <= 3){
-    document.getElementById('senha').setAttribute('style', 'border: 4px solid red');
+    document.getElementById('senha').setAttribute('style', 'border: 4px solid #990014');
     validSenha = false;
   }else{
     document.getElementById('senha').setAttribute('style', 'border: 4px solid green');
@@ -76,7 +76,7 @@ senha.addEventListener('keyup', () => {
 
 confirmarSenha.addEventListener('keyup', () => {
   if(senha.value != confirmarSenha.value){
-    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red');
+    document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid #990014');
     validConfirmarSenha = false;
   }else{
     document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid green');
@@ -87,7 +87,7 @@ confirmarSenha.addEventListener('keyup', () => {
 
 function cadastrar() {
   if (validSenha && validConfirmarSenha && validaEmail) {
-    alert('foi');
+    location.assign("../login/login.html")
   }else {
     document.getElementById('senha').setAttribute('style', 'border: 4px solid red');
     document.getElementById('confirmarSenha').setAttribute('style', 'border: 4px solid red');
@@ -96,3 +96,14 @@ function cadastrar() {
   }
 }
 
+function voltar() {
+  let confirmou;
+  confirmou = confirm("Tem certeza que deseja voltar ao Login?");
+
+  if(confirmou == true) {
+    location.assign("../login/login.html");
+  }else {
+    location.reload();
+  }
+
+}
