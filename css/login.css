@@ -76,7 +76,7 @@ input:valid ~ .underline::after{
     transform-origin: left;
 }
 
-button[type="button"]{
+button[type="submit"]{
     font-size: 17px;
     color: #fff;
     border-radius: 8px;
