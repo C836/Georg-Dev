@@ -85,7 +85,7 @@ button[type="submit"]{
     transition: all 0.3s ease;
 }
 
-button[type="button"]:hover{
+button[type="submit"]:hover{
     letter-spacing: 1px;
     background: linear-gradient(to right, rgb(8, 1, 98) 0%,#0651E8 100%);
 }
@@ -164,7 +164,19 @@ footer .p{
 .error-email, .error-senha{
     display: none;
 }
+.link-voltar{
+    text-decoration: none;
+    color: white;
+    
+}
+.link-voltar:hover{
+    letter-spacing: 1px;
+    text-decoration: none;
+}
 
+.botao_voltar, .back_button_div{
+    display: none;
+}
 
 /* Serve somente para mudar a cor caso a email e senha não forem digitados.*/
 .underlinePadrao::before{
