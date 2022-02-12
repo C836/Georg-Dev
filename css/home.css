@@ -22,7 +22,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
-body{background-color: white;}
+body{background-color: rgb(255, 255, 255);}
 
 .card-wrapper {
     margin: 5% 0;
@@ -73,6 +73,7 @@ body{background-color: white;}
 #displayDots{
     display:none
 }
+
 
 @media (min-width: 800px) {
     .nav-item a{display:block}
