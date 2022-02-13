@@ -1,8 +1,7 @@
-const button = document.getElementById('main-button');
-const changePassButton = document.getElementById('change-pass');
+const btn = document.getElementById('main-button');
 
 
-button.addEventListener('click', (event) =>{
+btn.addEventListener('click', (event) =>{
     event.preventDefault()
 
     const email = document.getElementById('email')
@@ -25,14 +24,12 @@ button.addEventListener('click', (event) =>{
         else{
             underlineErrorEmail.classList = "underline"
             spanError.style.display = 'none';
-            console.log('caiu errado')
-
         }
     }
         
    
     // Validacao senha
-    function validaSenha(){
+     function validaSenha(){
         const textLength = password.value.length;
     if (password.value == '' || textLength <=8){
         underlineErrorPassword.classList.add("underlinePadrao")
@@ -50,4 +47,3 @@ button.addEventListener('click', (event) =>{
 validaSenha();
 validaEmail();
 });
-

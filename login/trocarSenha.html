@@ -19,18 +19,26 @@
             <div class='box-titulo'>
                 <h1 class="titulo">Recuperação de Senha</h1>
             </div>
+
+<!--Input texto email-->
         <div class="input-box">
-            <input id="email" type="email" placeholder="Entre com o email cadastrado" required>
-            <div class="underline"></div>
+            <input id="email" type="email" placeholder="Entre com o email cadastrado" required autocomplete="off">
+            <div class="underline" id="underline-email-error"></div>
+            <span id="error-email" class= "error-email"></span>
         </div>
+
+      <!--Botao enviar-->  
         <div class="input-box button" id="submit-button">
-            <button id="change-pass" type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            <button id="enviar_troca_senha" type="submit" class="btn btn-primary btn-lg btn-block" onclick="validaEmail()">Enviar</button>
+        </div>
+        <div class="input-box button" id="back_button_div">
+            <button id="voltar" type="submit" class="btn btn-primary btn-lg btn-block botao_voltar" onclick="validaEmail()"><a  class="link-voltar" href="../index.html">voltar</a></button>
         </div>
         </form>
     </div>
     <footer>
         <p> &copy; 2022 Copyright - Front-Enders</p>
     </footer>
-    <script src="../js/login.js" defer></script>
+    <script src="../js/change-pass.js" defer></script>
   </body>
 </html>
