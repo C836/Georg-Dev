@@ -4,7 +4,7 @@ texto0 = "O GeorG Dev trouxe para você um super apanhado sobre o surpreendente 
 
 texto1Titulo = "Eai Titio Mark?"
 
-texto1 = "Depois de sofrer a maior queda da história, perdendo aproximadamente US$ 250 BILHÕES em valor de mercado(a maior perda financeira de uma empresa listada em bolsa na história do mercado) no último dia 3 a meta vê seus ativos crescendo e se mostra disposta a modificar a forma como vemos o mundo. Entenda mais na matéria feita pela nossa colunista e programadora full stack Jocélia Da Hora"
+texto1 = "Depois de sofrer a maior queda da história, perdendo aproximadamente US$ 250 BILHÕES em valor de mercado(a maior perda financeira de uma empresa listada em bolsa na história do mercado) no último dia 3, a Meta vê seus ativos crescendo e se mostra disposta a modificar a forma como vemos o mundo. Entenda mais na matéria feita pela nossa colunista e programadora full stack Jocélia Da Hora"
 
 texto2Titulo = "E vamos de 3.0"
 
