@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,505 +8,570 @@
     <title>Georg Dev</title>
     <link rel="icon" href="image/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://kit.fontawesome.com/1ace605db6.js" crossorigin="anonymous"></script>
-    <script src="js/home.js" defer></script>
-    <script src="js/home_slides.js" defer></script>
-    <script src="js/home_slides_textos.js" defer></script>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/equipe.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/home_slides.css">
+
+    <script src="view/js/home_slides.js" defer></script>
+    <script src="view/js/home_slides_textos.js" defer></script>
+
+    <link rel="stylesheet" href="view/css/home_main.css">
+    <link rel="stylesheet" href="view/css/home_equipe.css">
+    <link rel="stylesheet" href="view/css/home_footer.css">
+    <link rel="stylesheet" href="view/css/home_slides.css">
+    <link rel="stylesheet" href="view/css/navbar.css">
 </head>
 
-<!--- HOME PRINCIPAL GABRIEL --->
-
 <body>
-    <img id="backSlide" src="image/backSlide.png">
+    <img id="backSlide" src="view/images/background_slide.png">
     <div id="displayDots"></div>
-    <img class="background"src="image/back.png">
+    <img class="background" src="view/images/background_home.png">
     <section>
-    <div class="ml-4"id="logo">
-      <div id="logoHover"></div>
-
-        <div class="logoImg"><img src="image/logoL.png"></div> 
-        <div id="logoNome"><img id="george" src=image/georg.png></div>
-        <div class="logoImg" id="logoR"><img src="image/logoR.png"></div>
-
-    </div>
-    <div class="navBar">
-        <nav class="navbar navbar-expand-lg mt-2">
-            <div class="nav-item">
-                <a class="nav-link mr-sm-5 my-2 aNav" href="#sobre">Sobre</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Blog</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Nossa equipe</a>
-            </div>
-            <div class="nav-item">
-                <button type="button" class="btn btnConf nav-link mr-sm-4 my-2 px-4 aNav"  href="#" onclick="location.href='login/login.html'">Log-in</button>
-            </div>
-        </nav>
-    </div>
-  </section>
-  <section>
-    <div class="w-100 display1">
-        <div class="px-3 mt-5 displayDiv">
-            <h1 class="mb-4">GeorG Dev</h1>
-            <p class="my-3 mb-5 desc">Sua newsletter diária com o que tem de melhor e mais fresquinho sobre o mundo da tecnologia para te ajudar e manter você sempre atenado.<p>
-            <span>Quer saber mais?</span><br><br>
-            <button type="button" class="btn px-5 py-3 btnConf" >Confira nossos planos!</button>
+        <div class="ml-4" id="logo">
+            <div id="logoHover"></div>
+            <div class="logoImg"><img src="view/images/nav_footer/logoL.png"></div>
+            <div id="logoNome"><img id="george" src=view/images/nav_footer/georg.png></div>
+            <div class="logoImg" id="logoR"><img src="view/images/nav_footer/logoR.png"></div>
         </div>
-    </div>
-  </section>
-  <section class="bg-light pt-5">
-    <div class="about-cards-section cards">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 card-wrapper">
-              <div class=" card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px;">
-                  <img class="w-100 h-100" src="https://source.unsplash.com/910x592" alt="Card image cap">
+        <div class="navBar">
+            <nav class="navbar navbar-expand-lg mt-2">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <div class="nav-item">
+                        <a class="nav-link mr-sm-5 my-2 aNav" href="#posts">Posts</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mr-sm-5 my-2 aNav" href="#blog">Blog</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link mr-sm-5 my-2 aNav" href="#team">Nossa equipe</a>
+                    </div>
+                    <div class="nav-item">
+                        <button type="button" class="btn btnConf nav-link mr-sm-4 my-2 px-4 aNav"
+                            onclick="location.href='view/html/login.html'">Log-in</button>
+                    </div>
                 </div>
-                <div class="noticias card-body text-center mt-4">
-                  <h3 class="text-uppercase card-titulo">Noticias</h3>
-                  <p class="card-texto">Mantenha-se atualizado de tudo relacionado ao mundo Tech com nossos lançamentos semanais!</p>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-sm-4 card-wrapper">
-              <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image" style="width:175px; height:175px">
-                  <img class="w-100 h-100" src="https://source.unsplash.com/1230x802" alt="Card image cap">
-                </div>
-                <div class="card-body text-center mt-4">
-                  <h3 class="text-uppercase card-titulo">Oportunidades</h3>
-                  <p class="card-texto">Diversas dicas e cursos para turbinar seu portfólio, tudo para te ajudar a conquistar sua tão desejada vaga</p>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-sm-4 card-wrapper">
-              <div class="card border-0">
-                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image " style="width:175px; height:175px">
-                  <img class="w-100 h-100" src="https://source.unsplash.com/1230x794" alt="Card image cap">
-                </div>
-                <div class="card-body text-center mt-4">
-                  <h3 class="text-uppercase card-titulo">E muito mais!</h3>
-                  <p class="card-texto">Confira nossa assinatura premium para ter acesso a conteúdos selecionados como cursos, podcasts exclusivos e acesso ao grupo de membros</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </nav>
         </div>
-      </div>
+    </section>
+    <section>
+        <div class="w-100 display1">
+            <div class="px-3 displayDiv">
+                <h1 class="mb-2">Georg Dev</h1>
+                <p class="my-3 mb-5 desc">Sua newsletter semanal com o que tem de melhor e mais fresquinho sobre o mundo
+                    da tecnologia para te ajudar e manter você sempre antenado.<br><br>
+                    <span>Quer saber mais?</span></br></br>
+                    <button type="button" class="btn px-5 py-3 btnConf"
+                        onclick="location.href='view/html/cadastro.html'">Confira nossos planos!</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light pt-5">
+        <div class="about-cards-section cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 card-wrapper">
+                        <div class="card border-0">
+                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
+                                style="width:175px; height:175px;">
+                                <img class="w-100 h-100"
+                                    src="view/images/s1.webp"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h3 class="text-uppercase card-titulo">Noticias</h3>
+                                <p class="card-texto">Mantenha-se atualizado de tudo relacionado ao mundo Tech com
+                                    nossos lançamentos semanais!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 card-wrapper">
+                        <div class="card border-0">
+                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image"
+                                style="width:175px; height:175px">
+                                <img class="w-100 h-100"
+                                    src="view/images/s2.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h3 class="text-uppercase card-titulo">Oportunidades</h3>
+                                <p class="card-texto">Diversas dicas e cursos para turbinar seu portfólio, tudo para te
+                                    ajudar a conquistar sua tão desejada vaga</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 card-wrapper">
+                        <div class="card border-0">
+                            <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image "
+                                style="width:175px; height:175px">
+                                <img class="w-100 h-100" 
+                                    src="view/images/s3.jpg"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h3 class="text-uppercase card-titulo">E muito mais!</h3>
+                                <p class="card-texto">Confira nossa assinatura premium para ter acesso a conteúdos
+                                    selecionados como cursos, podcasts exclusivos e acesso ao grupo de membros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100" style="text-align:center">
+                        <h5 class="section-title h1">Ultimos posts</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-<section id="sobre">
-    <div id="displaySlide" onclick="slide()">
-        <div id="areaSlides">
-            <div class="slides">
-                <div class="slides thd" style="background-image: url('image/net\ 3.0.jpg'); background-size: cover;">
-                </div>
+    <section id="posts">
+        <div id="displaySlide" onclick="slide()">
+            <div id="areaSlides">
+                <div class="slides">
+                    <div class="slides main"
+                        style="background-image: url(view/images/blog/gif_dance.gif); background-size: cover;">
+                    </div>
 
-                <div class="slides sec" style="background-image: url('image/metaverso-card.jpg'); background-size: cover;">
-                </div>
+                    <div class="slides sec"
+                        style="background-image: url(view/images/blog/metaverso.jpg); background-size: cover;">
+                    </div>
 
-                <div class="slides main" style="background-image: url('image/gif-dance.gif'); background-size: cover;">
+                    <div class="slides thd"
+                        style="background-image: url(view/images/blog/net30.jpg); background-size: cover;">
+                    </div>
                 </div>
-                
+            </div>
+
+
+            <div id="areaTexto">
+                <div id="slideTexto">
+                    <h1 id="slideH1">Só uma dancinha qualquer né?</h1>
+                    <h5 id="slideH6" style="line-height:2">O GeorG Dev trouxe para você um super apanhado sobre o
+                        surpreendente dinheiro que as estrelas do TikTok ganham. Pensa num valor e chuta pra cima...
+                        Alguns chegam a ganhar até 500mil dólares. Descubra mais sobre, na reportagem do nosso enviado
+                        especial e desenvolvedor Victor que hoje diretamente de Londres, onde trabalha como
+                        desenvolvedor Full Stack nos atualiza sobre os valores.
+                    </h5>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="areaTexto">
-            <div id="slideTexto" class="paragrafo-card">
-                <h1 id="slideH1"> Discover</h1>
-                <h4 id="slideH6" style="line-height:2"><p>Descubra aqui as maiores inovações, acontecimentos e tudo mais que acontece no campo da tecnologia daquela forma que só o GeorG Dev consegue entregar.Afinal, além de entregar tudo, o GeorG Dev não poderia te deixar de fora de uma boquinha dessa não é mesmo dev?</p>
-                </h4>
+
+    <!--- ultimos posts Jocelia --->
+
+    <section class="pt-5 pb-5 bg-light" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="section-title h1">E Mais!</h3>
+                </div>
+
+                <div class="col-6 text-right">
+                    <a class="btn btnConf mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="btn btnConf mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/react1.jpeg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Fundamentos do React</h4>
+                                                <p class="card-texto">Neste capítulo abordaremos alguns conceitos
+                                                    fundamentais do React... </p>
+                                                <button type="button" class="btn btnConf" onclick=" leia()">leia
+                                                    mais</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/dev_ext.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Devs Exterior</h4>
+                                                <p class="card-texto">Fala pessoal, hoje vamos abordar como é trabalhar
+                                                    no exterior na area tech...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/fW.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Frameworks do Momento</h4>
+                                                <p class="card-texto">Você saberia responder quais frameworks estão em
+                                                    alta em 2022?...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/IA.jpeg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">A Tecnologia da Alexa</h4>
+                                                <p class="card-texto">Conheça a tecnologia da assistente de voz da
+                                                    Amazon...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/equipe.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Trabalho em Equipe</h4>
+                                                <p class="card-texto">Afinal, porquê o trabalho em equipe é tão
+                                                    importante?...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/github.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">GIT e GITHUB</h4>
+                                                <p class="card-texto">Dicas valiosas para versionamento de codigo...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/bug.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Não Funciona!</h4>
+                                                <p class="card-texto">Vejas quais principais boas práticas que minimizam
+                                                    erros...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/descanso.jpeg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Dando aquela pausa</h4>
+                                                <p class="card-texto">Não pira! O descanso é muito importante no seu
+                                                    desempenho...</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="view/images/blog/in.jpeg">
+                                            <div class="card-body">
+                                                <h4 class="card-titulo">Linkedin, como ser visto?</h4>
+                                                <p class="card-textoo">Entenda a impotancia de deixar essa rede sempre
+                                                    atualizada..</p>
+                                                <button type="button" class="btn btnConf">leia mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!--- ultimos posts Jocelia --->
 
-<!--- ultimos posts Jocelia --->
-
-<section class="pt-5 pb-5 bg-light" id="blog">
-  <div class="container">
-      <div class="row">
-          <div class="col-6">
-              <h3 class="section-title h1">Ultimos posts </h3>
-          </div>
-          
-          <div class="col-6 text-right">
-              <a class="btn btnConf mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                  <i class="fa fa-chevron-left"></i>
-              </a>
-              <a class="btn btnConf mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                  <i class="fa fa-chevron-right"></i>
-              </a>
-          </div>
-          <div class="col-12">
-              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <div class="row">
-
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/react1.jpeg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Fundamentos do React</h4>
-                                          <p class="card-texto">Neste capítulo abordaremos alguns conceitos fundamentais do React... </p>
-                                          <button type="button" class="btn btnConf" onclick=" leia()">leia mais</button>
-                                      </div>
-
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/dev_ext.jpg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Devs Exterior</h4>
-                                          <p class="card-texto">Fala pessoal, hoje vamos abordar como é trabalhar no exterior na area tech...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3" >
-                                  <div class="card" >
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/fW.jpg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Frameworks do Momento</h4>
-                                          <p class="card-texto">Você saberia responder quais frameworks estão em alta em 2022?...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="row">
-
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/IA.jpeg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">A Tecnologia da Alexa</h4>
-                                          <p class="card-texto">Conheça a tecnologia da assistente de voz da Amazon...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/equipe.jpg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Trabalho em Equipe</h4>
-                                          <p class="card-texto">Afinal, porquê o trabalho em equipe é tão importante?...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/github.jpg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">GIT e GITHUB</h4>
-                                          <p class="card-texto">Dicas valiosas para versionamento de codigo...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="row">
-
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/bug.jpg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Não Funciona!</h4>
-                                          <p class="card-texto">Vejas quais principais boas práticas que minimizam erros...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/descanso.jpeg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Dando aquela pausa</h4>
-                                          <p class="card-texto">Não pira! O descanso é muito importante no seu desempenho...</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 mb-3">
-                                  <div class="card">
-                                      <img class="img-fluid" alt="100%x280" src="./image/img_UPost/in.jpeg">
-                                      <div class="card-body">
-                                          <h4 class="card-titulo">Linkedin, como ser visto?</h4>
-                                          <p class="card-textoo">Entenda a impotancia de deixar essa rede sempre atualizada..</p>
-                                          <button type="button" class="btn btnConf">leia mais</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<!--- ultimos posts Jocelia --->
-
-<!---time victor-->
-<section id="team" class="pb-5">
-    <div class="container">
-        <h5 class="section-title h1">Nossa Equipe</h5>
-        <div class="row vRow" >
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" >
-                    <div class="mainflip flip-0">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="./image/img_equipe/gabriel.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Gabriel Lopes</h4>
-                                    <p class="card-texto">O mais novo da equipe mas não menos responsável.</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+    <!---time victor-->
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Nossa Equipe</h5>
+            <div class="row vRow">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="view/images/equipe/gabriel.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Gabriel Lopes</h4>
+                                        <p class="card-texto">O mais novo da equipe mas não menos responsável.</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Gabriel Lopes</h4>
-                                    <p class="card-texto">Viciado em programação. Toda dificuldade pra ele se torna um desafio, não tem essa de não sei fazer para o menino Gabriel, tudo é possível.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/C836">
-                                                <i class="fa fa-github"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/gabriel-lopes8/">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Gabriel Lopes</h4>
+                                        <p class="card-texto">Viciado em programação. Toda dificuldade pra ele se torna um desafio, não tem essa de não sei fazer para o menino Gabriel, tudo é possível.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://github.com/C836">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.linkedin.com/in/gabriel-lopes8/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="./image/img_equipe/jocelia.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Jocélia Da Hora</h4>
-                                    <p class="card-texto">É daora mesmo, sobrenome, de família, pode confiar...!!</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="view/images/equipe/jocelia.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Jocélia Da Hora</h4>
+                                        <p class="card-texto">É daora mesmo, sobrenome, de família, pode confiar...!!
+                                        </p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Jocélia Da Hora</h4>
-                                    <p class="card-texto">Nossa desenvolvedora Full Stack e colunista do Blog do Georg Dev, sempre empenhada, não dá menos que o seu melhor para qualquer projeto.  Adora uma aulinha de soft pra colocar as fofocas em dia.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="github.com/JoceliaHora">
-                                                <i class="fa fa-github"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/joceliaoliveira/">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="./image/img_equipe/paulo.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Paulo Reis</h4>
-                                    <p class="card-textoo">É só a minha mãe ou a de vocês também ameaça de ir embora?</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Paulo Reis</h4>
-                                    <p class="card-texto">Tem 1,93 de altura, é o dev mais alto da América do Sul. Gosta muito de mexer com cor, layout estilo e tudo que se liga à isso. É front-end que fala né?</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/paulooliveirv">
-                                                <i class="fa fa-github"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/paulo-reis-b424a1217/">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Jocélia Da Hora</h4>
+                                        <p class="card-texto">Nossa desenvolvedora Full Stack e colunista do Blog do
+                                            Georg Dev, sempre empenhada, não dá menos que o seu melhor para qualquer
+                                            projeto. Adora uma aulinha de soft pra colocar as fofocas em dia.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://github.com/JoceliaHora">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.linkedin.com/in/joceliaoliveira/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="./image/img_equipe/talita.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Talita Beneves</h4>
-                                    <p class="card-texto">Back-End? Front-End? ou Full-Stack?</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="view/images/equipe/paulo.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Paulo Reis</h4>
+                                        <p class="card-textoo">É só a minha mãe ou a de vocês também ameaça de ir
+                                            embora?</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Talita Beneves</h4>
-                                    <p class="card-texto">
-                                        Pro que precisar pode chamar, sabe de tudo um pouco, de ReactJs então... Tocou na Talita ja sabe que é sucesso.
-                                    </p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/TalitaBeneves">
-                                                <i class="fa fa-github"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/talitabeneves/">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="./image/img_equipe/victor.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Victor Barros</h4>
-                                    <p class="card-texto">Front-end, home page e equipe</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Victor Barros</h4>
-                                    <p class="card-texto">O legal do Victor é que o trabalho tem que ser todo alinhado, responsabilidades, layout, prazos... Ótima pessoa para se ter na equipe pela organização de prazos.</p>
-                                    <ul class="list-inline">
-                                        
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/victorb26">
-                                                <i class="fa fa-github"></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/victorjcbarros/">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Paulo Reis</h4>
+                                        <p class="card-texto">Tem 1,93 de altura, é o dev mais alto da América do Sul.
+                                            Gosta muito de mexer com cor, layout estilo e tudo que se liga à isso. É
+                                            front-end que fala né?</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://github.com/paulooliveirv">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.linkedin.com/in/paulo-reis-b424a1217/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="view/images/equipe/talita.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Talita Beneves</h4>
+                                        <p class="card-texto">Back-End? Front-End? ou Full-Stack?</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Talita Beneves</h4>
+                                        <p class="card-texto">
+                                            Pro que precisar pode chamar, sabe de tudo um pouco, de ReactJs então... Tocou na Talita ja sabe que é sucesso.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://github.com/TalitaBeneves">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.linkedin.com/in/talitabeneves/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="view/images/equipe/victor.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Victor Barros</h4>
+                                        <p class="card-texto">Front-end, home page e equipe</p>
+                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Victor Barros</h4>
+                                        <p class="card-texto">O legal do Victor é que o trabalho tem que ser todo alinhado, responsabilidades, layout, prazos... Ótima pessoa para se ter na equipe pela organização de prazos.</p>
+                                        <ul class="list-inline">
+
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://github.com/victorb26">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.linkedin.com/in/victorjcbarros/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-                      
         </div>
-    </div>
-</section>
+    </section>
 </body>
 
 <footer>
     <div id="fooLista">
 
         <ul>
-            <li><h4>Inicio</h4></li>
-            <li>Cadastro</li>
-            <li>Blog</li>
-            <li>Nosso time</li>
+            <li>
+                <h4>Inicio</h4>
+            </li>
+            <li><a href='view/html/cadastro.html'>Cadastro</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#team">Nosso time</a></li>
         </ul>
 
         <ul class="fooUl">
-            <li><h4>Equipe</h4></li>
-            <li>Gabriel Lopes</li>
-            <li>Jocélia Oliveira</li>
-            <li>Paulo Oliveira</li>
-            <li>Talita Beneves</li>
-            <li>Victor Barros</li>
+            <li>
+                <h4>Equipe</h4>
+            </li>
+            <li><a href="https://www.linkedin.com/in/gabriel-lopes8/">Gabriel Lopes</a></li>
+            <li><a href="https://www.linkedin.com/in/joceliaoliveira/">Jocélia Oliveira</a></li>
+            <li><a href="https://www.linkedin.com/in/paulo-reis-b424a1217/">Paulo Oliveira</a></li>
+            <li><a href="https://www.linkedin.com/in/talitabeneves/">Talita Beneves</a></li>
+            <li><a href="https://www.linkedin.com/in/victorjcbarros/">Victor Barros</a></li>
         </ul>
 
         <ul>
-            <li><h4>Suporte</h4></li>
+            <li>
+                <h4>Suporte</h4>
+            </li>
             <li><i class="fas fa-comment-alt"></i> Chat online</i></li>
             <li><i class="fas fa-envelope"></i> E-mail</i></li>
             <li><i class="fas fa-phone-alt"></i> Telefones</i></li>
@@ -525,10 +591,11 @@
     </div>
 
     <div id="fooLogoB">
-        <img src="image/logoSat.png" id="fooLogo">
+        <img src="view/images/nav_footer/logoSat.png" id="fooLogo">
     </div>
 </footer>
 <div id="fooCopy">
     <p>&copy; 2022 Copyright - Front-Enders</p>
 </div>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,29 @@
     <script src="https://kit.fontawesome.com/a4276b403d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+    <script src="../../controller/login_validacao.js" defer></script>
+    <link rel="shortcut icon" href="../images/nav_footer/icon.png" type="image/x-icon">
     <title>Recuperação de Senha</title>
 </head>
+
 <body>
     <div class="container">
         <form action="#">
             <div class='box-titulo'>
                 <h1 class="titulo">Recuperação de Senha</h1>
             </div>
-        <div class="input-box">
-            <input id="email" type="email" placeholder="Entre com o email cadastrado" required>
-            <div class="underline"></div>
-        </div>
-        <div class="input-box button" id="submit-button">
-            <button id="change-pass" type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
-        </div>
+            <div class="input-box">
+                <input id="email" type="email" placeholder="Entre com o email cadastrado" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box button" id="submit-button">
+                <button id="change-pass" type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+            </div>
         </form>
     </div>
     <footer>
         <p> &copy; 2022 Copyright - Front-Enders</p>
     </footer>
-    <script src="../js/login.js" defer></script>
-  </body>
+</body>
+
 </html>

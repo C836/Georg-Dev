@@ -1,10 +1,15 @@
-.aNav{color: rgb(255, 255, 255);}
-.aNav:hover{color: rgb(210, 210, 210);}
+.aNav {
+    color: rgb(255, 255, 255);
+}
+
+.aNav:hover {
+    color: rgb(210, 210, 210);
+}
 
 .navbar {
-    position:absolute; 
+    position: absolute;
     z-index: 99;
-    right:0;
+    right: 0;
     background-color: transparent;
 }
 
@@ -21,7 +26,7 @@
     overflow: hidden;
     z-index: 99;
     top: 25px;
-    left: 40px;
+    transform: scale(0.8)
 }
 
 .logoImg {
@@ -73,8 +78,15 @@
     color: white;
 }
 
-.btnConf:active{
+.btnConf:active {
     transition: none;
     color: #0651e8;
     background-color: white;
+}
+
+@media (min-width: 700px) {
+    #logo {
+        left: 40px;
+        transform: scale(1)
+    }
 }
