@@ -13,7 +13,7 @@ o perfil do desenvolvedor de hoje em dia é multifacetado.
 - [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
 - [JavaScript](https://www.javascript.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- [API Correios](https://developer.marvel.com/)
+- [API Correios](https://apicep.com/api-de-consulta/)
 
 # :boy::girl: Participantes do projeto
 
